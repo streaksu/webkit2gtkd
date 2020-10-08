@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/webkit2gtkd
+webkit2gtkd.so
+webkit2gtkd.dylib
+webkit2gtkd.dll
+webkit2gtkd.a
+webkit2gtkd.lib
+webkit2gtkd-test-*
+*.exe
+*.o
+*.obj
+*.lst
