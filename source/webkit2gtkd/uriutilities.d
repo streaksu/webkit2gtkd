@@ -3,7 +3,7 @@
  */
 module webkit2gtkd.uriutilities;
 
-import std.string: toStringz;
+import std.string: fromStringz, toStringz;
 
 private extern (C) {
     immutable(char)* webkit_uri_for_display(immutable(char)*);
@@ -24,5 +24,5 @@ private extern (C) {
  * Returns: A URI suitable for display, or `null` in case of failure.
  */
 string getURIForDisplay(string uri) {
-    return webkit_uri_for_display(toStringz(uri));
+    return fromStringz(webkit_uri_for_display(toStringz(uri)));
 }
