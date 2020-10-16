@@ -1,5 +1,6 @@
 {
 	"name": "webkit2gtkd",
+	"homepage": "https://github.com/streaksu/webkit2gtkdd",
 	"description": "A wrapper for the webkit2gtk library using GtkD",
 	"license": "BSL-1.0",
 	"copyright": "Copyright © 2020, streaksu",
@@ -7,10 +8,11 @@
 	"authors": [
 		"streaksu"
 	],
+	"systemDependencies": "WebKit2GTK version >= 2.30.1",
 	"dependencies": {
 		"gtk-d": "~>3.9.0"
 	},
 	"libs": [
-		"webkit2gtk-4.0"
+		"webkit2gtk"
 	]
 }
