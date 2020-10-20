@@ -1,0 +1,6 @@
+includeComments: y
+
+lookup: APILookupJavaScriptCore.txt
+lookup: APILookupSoup.txt
+lookup: APILookupWebkit2.txt
+lookup: APILookupWebkit2WebExtension.txt

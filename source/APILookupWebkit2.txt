@@ -1,0 +1,2 @@
+wrap: webkit2
+file: WebKit2-4.0.gir

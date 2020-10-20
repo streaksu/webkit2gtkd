@@ -1,0 +1,2 @@
+wrap: webkit2webextension
+file: WebKit2WebExtension-4.0.gir

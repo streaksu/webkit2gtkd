@@ -1,0 +1,2 @@
+wrap: soup
+file: Soup-2.4.gir
