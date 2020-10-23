@@ -119,7 +119,7 @@ public class DOMNode : DOMObject, DOMEventTargetIF
 	 *
 	 * Throws: GException on failure.
 	 */
-	public DOMNode cloneNode(bool deep)
+	/*public DOMNode cloneNode(bool deep)
 	{
 		GError* err = null;
 
@@ -136,7 +136,7 @@ public class DOMNode : DOMObject, DOMEventTargetIF
 		}
 
 		return ObjectG.getDObject!(DOMNode)(cast(WebKitDOMNode*) __p);
-	}
+	}*/
 
 	/**
 	 *
