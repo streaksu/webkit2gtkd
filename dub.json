@@ -13,6 +13,6 @@
 		"gtk-d": "~>3.9.0"
 	},
 	"libs": [
-		"webkit2gtk"
+		"webkit2gtk-4.0"
 	]
 }
