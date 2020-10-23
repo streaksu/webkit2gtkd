@@ -122,16 +122,9 @@ public class WebContext : ObjectG
 	 *
 	 * Throws: ConstructionException GTK+ fails to create the object.
 	 */
-	public this()
+	public static WebContext newEphemeral()
 	{
-		auto __p = webkit_web_context_new_ephemeral();
-
-		if(__p is null)
-		{
-			throw new ConstructionException("null returned by new_ephemeral");
-		}
-
-		this(cast(WebKitWebContext*) __p, true);
+		return new WebContext(webkit_web_context_new_ephemeral(), true);
 	}
 
 	/**

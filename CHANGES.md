@@ -8,3 +8,5 @@
 - `soup/ClientContext ClientContext`: Remove useless `gio.Socket` import.
 - `soup/Server Server`: Ditto.
 - `webkit2/WebView WebView`: Remove the `override` from `getSettings`.
+- `webkit2/WebContext WebContext`: Make the ephemeral constructor `newEphemeral` instead of `this` because name clashes.
+- `javascriptcore/Value`: Ditto for `newJSON` and `newUndefined`.

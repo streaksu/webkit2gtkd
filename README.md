@@ -26,6 +26,9 @@ dub add webkit2gtkd
 
 ## Wrapped versions
 
-| Library      | Version |
-| ------------ | ------- |
-| `webkit2gtk` | 2.30.X  |
+| Library               | Version                           |
+| --------------------- | --------------------------------- |
+| `javascriptcore`      | Bundled with webkit2 in the repo. |
+| `soup`                | 2.72.X                            |
+| `webkit2gtk`          | 2.30.X                            |
+| `webki2webextension`  | Bundled with webkit2 in the repo. |

@@ -135,16 +135,9 @@ public class Value : ObjectG
 	 *
 	 * Throws: ConstructionException GTK+ fails to create the object.
 	 */
-	public this(Context context, string json)
+	public static Value newJSON(Context context, string json)
 	{
-		auto __p = jsc_value_new_from_json((context is null) ? null : context.getContextStruct(), Str.toStringz(json));
-
-		if(__p is null)
-		{
-			throw new ConstructionException("null returned by new_from_json");
-		}
-
-		this(cast(JSCValue*) __p, true);
+		return new Value(jsc_value_new_from_json((context is null) ? null : context.getContextStruct(), Str.toStringz(json)), true);
 	}
 
 	/**
@@ -346,16 +339,9 @@ public class Value : ObjectG
 	 *
 	 * Throws: ConstructionException GTK+ fails to create the object.
 	 */
-	public this(Context context)
+	public static Value newUndefined(Context context)
 	{
-		auto __p = jsc_value_new_undefined((context is null) ? null : context.getContextStruct());
-
-		if(__p is null)
-		{
-			throw new ConstructionException("null returned by new_undefined");
-		}
-
-		this(cast(JSCValue*) __p, true);
+		return new Value(jsc_value_new_undefined((context is null) ? null : context.getContextStruct()), true);
 	}
 
 	/**
