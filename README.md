@@ -24,6 +24,27 @@ Or you can add it to a previous dub project with:
 dub add webkit2gtkd
 ```
 
+## Example
+
+The simplest hello world program using webkit2 would be
+
+```d
+import gtk.Main:        Main;
+import gtk.Window:      Window;
+import webkit2.WebView: WebView;
+
+void main(string[] args)
+{
+    Main.init(args);
+    auto window  = new Window("Hello World Webkit!");
+    auto webview = new WebView();
+    webview.loadUri("https://dlang.org");
+    window.add(webview);
+    window.showAll();
+    Main.run();
+}
+```
+
 ## Wrapped versions
 
 | Library               | Version                           |
