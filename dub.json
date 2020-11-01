@@ -1,6 +1,5 @@
 {
 	"name": "webkit2gtkd",
-	"homepage": "https://github.com/streaksu/webkit2gtkdd",
 	"description": "A wrapper for the webkit2gtk library using GtkD",
 	"license": "BSL-1.0",
 	"copyright": "Copyright © 2020, streaksu",
